@@ -3,19 +3,14 @@ body {
     font-size: 16px;
     font-family: Calibri, 'Trebuchet MS', sans-serif;
     display: grid;
-    grid-template-columns: 30% 65%;
-    grid-column-gap: 5%;
-    grid-template-rows: repeat(6,auto);
-    grid-row-gap: 10px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    grid-template-columns: 10vw 25vw auto 55vw 10vw;
+    grid-template-rows: 5vh auto;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
 }
 
-/* #skills hr, #education hr, #skills, #experience, #workshops, #hobbies, #organizations {
-    float: left;
-    width: 75%;
-}
- */
+
 h2 {
     margin-bottom: 0.25rem;
 }
@@ -24,46 +19,45 @@ h3 {
     margin: 0.1rem;
 }
 
-ul {
-    margin: 0.1rem;
-}
 
 #name {
-    grid-column: 1;
-    grid-row: 1;
+    grid-column: 2;
+    grid-row: 2;
 }
 #name>img {
+    margin: 1rem 0;
     width: 90%;
+    max-width: 300px;
 }
-#personal-data {
-    grid-column: 1;
+
+#info-tabs {
+    grid-column: 4;
     grid-row: 2;
 }
-#agreement {
-    grid-column: 1;
-    grid-row: 6;
+
+#info-tabs table {
+    margin: 1rem;
 }
+
+#info-tabs td {
+    padding: 1rem;
+}
+
 #skills {
-    grid-column: 2;
-    grid-row: 1;
+    
 }
 #education {
-    grid-column: 2;
-    grid-row: 2;
+   
 }
 #experience {
-    grid-column: 2;
-    grid-row: 4;
+    
 }
 #workshops {
-    grid-column: 2;
-    grid-row: 3;
+    
 }
 #organizations {
-    grid-column: 2;
-    grid-row: 5;
+   
 }
 #hobbies {
-    grid-column: 2;
-    grid-row: 6;
+   
 }
