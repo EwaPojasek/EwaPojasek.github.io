@@ -43,6 +43,10 @@ h3 {
     padding: 1rem;
 }
 
+#name i {
+    font-size: 1.3rem;
+}
+
 #skills {
     
 }
