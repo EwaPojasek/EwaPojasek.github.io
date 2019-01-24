@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ewa Pojasek</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -52,7 +52,11 @@
     <div id="info-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" id="skills-tab" data-toggle="tab" href="#skills" role="tab" aria-controls="skills"
+                <a class="nav-link active" id="about-me-tab" data-toggle="tab" href="#about-me" role="tab"
+                    aria-controls="about-me" aria-selected="false"><i class="far fa-smile-wink"></i></i> O MNIE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="skills-tab" data-toggle="tab" href="#skills" role="tab" aria-controls="skills"
                     aria-selected="true"><i class="far fa-lightbulb"></i> UMIEJĘTNOŚCI</a>
             </li>
             <li class="nav-item">
@@ -67,67 +71,64 @@
                 <a class="nav-link" id="workshops-tab" data-toggle="tab" href="#workshops" role="tab" aria-controls="workshops"
                     aria-selected="false"><i class="fas fa-cogs"></i> WARSZTATY</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" id="about-me-tab" data-toggle="tab" href="#about-me" role="tab" aria-controls="about-me"
-                    aria-selected="false"><i class="far fa-smile-wink"></i></i> O MNIE</a>
-            </li>
         </ul>
         <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="skills" role="tabpanel" aria-labelledby="skills-tab">
-                <table>
-                    <tr>
-                        <td>Python 3</td>
-                        <td> - Podstawowa znajomość</td>
-                    </tr>
-                    <tr>
-                        <td>HTML i CSS</td>
-                        <td> - Podstawowa znajomość</td>
-                    </tr>
-                    <tr>
-                        <td>Cypress</td>
-                        <td> - Podstawowa znajomość</td>
-                    </tr>
-                    <tr>
-                        <td>SQL Server</td>
-                        <td> - Podstawowa znajomość</td>
-                    </tr>
-                    <tr>
-                        <td>ISTQB</td>
-                        <td> - Znajomość zagadnień</td>
-                    </tr>
-                    <tr>
-                        <td>Język angielski</td>
-                        <td> - Poziom B2</td>
-                    </tr>
-                </table>
+            <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+                <ul>
+                    <li>
+                        Podstawowa znajomość HTML i CSS,
+                    </li>
+                    <li>
+                        Znajomość zstandardów oraz procedur testowania oprogramowania,
+                    </li>
+                    <li>
+                        Podstawowa znajomość Python 3,
+                    </li>
+                    <li>
+                        Obsługa kontroli wersji Git,
+                    </li>
+                    <li>
+                        Podstawowa znajomość narzędzia do automatyzacji testów e2e Cypress,
+                    </li>
+                    <li>
+                        Podstawowa znajomość SQL (SQL Server),
+                    </li>
+                    <li>
+                        Znajomość środowisk programistycznych Visual Studio Code, Jupyter,
+                    </li>
+                    <li>
+                        Język angielski - poziom B2.
+                    </li>
+
+                </ul>
             </div>
             <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
                 <table>
                     <tr>
-                        <td>2012 - 2016</td>
-                        <td> Politechnika Wrocławska, studia I stopnia <br>
-                            Budownictwo, specjalność: Inżynieria Lądowa</td>
-                    </tr>
-                    <tr>
                         <td>2017 - 2018</td>
                         <td> Politechnika Wrocławska, studia II stopnia <br>
                             Budownictwo, specjalność: Inżynieria Mostowa</td>
+                    </tr>
+                    <tr>
+                        <td>2012 - 2016</td>
+                        <td> Politechnika Wrocławska, studia I stopnia <br>
+                            Budownictwo, specjalność: Inżynieria Lądowa</td>
                     </tr>
                 </table>
             </div>
             <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
                 <table>
                     <tr>
-                        <td>08 - 09.2015</td>
-                        <td> Tarcopol – Oddział Wrocław – praktyka studencka</td>
+                        <td>07.2018 - obecnie</td>
+                        <td> CMSZ ATOM – Asystent Projektanta branży mostowej</td>
                     </tr>
                     <tr>
                         <td>10.2015 - 02.2017</td>
                         <td> Tarcopol TPM Consulting – Asystent Projektanta branży mostowej</td>
                     </tr>
                     <tr>
-                        <td>07.2018 - obecnie</td>
-                        <td> CMSZ ATOM – Asystent Projektanta branży mostowej</td>
+                        <td>08 - 09.2015</td>
+                        <td> Tarcopol – Oddział Wrocław – praktyka studencka</td>
                     </tr>
                 </table>
             </div>
@@ -139,8 +140,26 @@
                     </tr>
                 </table>
             </div>
-            <div class="tab-pane fade" id="about-me" role="tabpanel" aria-labelledby="about-me-tab">
-                TU BEDZIE TEKST O MNIE
+            <div class="tab-pane fade show active" id="about-me" role="tabpanel" aria-labelledby="about-me-tab">
+                Dobrze Cię widzieć na moim bardzo małym i niedopracowanym kawałku Internetu. Oto moja krótka historia.
+                <br><br>
+                W czerwcu 2018 skończyłam studia na Politechnice Wrocławskiej. Magister inżynier budownictwa w
+                specjalności mostowej. Brzmi dumnie, prawda? Poświęciłam na ten cel kilka lat mojego życia – ucząc się,
+                przygotowując projekty, zdobywając pierwszą pracę „w branży” jeszcze nie mając nawet tytułu inżyniera.
+                Przez cały ten czas byłam przekonana, że to jest to co właśnie chcę robić. Szczęście się do mnie
+                uśmiechnęło i od razu po studiach rozpoczęłam wymarzoną pracę, jednak od pewnego czasu coś z tyłu głowy
+                pytało „jesteś pewna?”. <br><br>
+                Jak nie mosty, to co? <br><br>
+                Rok wcześniej miałam okazję wziąć udział w weekendowych warsztatach programowania – wtedy z myślą „na
+                pewno w którymś momencie pracy mi się to przyda”, teraz – a może to właśnie tam jest moje miejsce? W
+                tym momencie miałam wrażenie, że świat IT zaatakował mnie z każdej strony, zaczęłam się zastanawiać,
+                gdzie mogłabym się odnaleźć. Zapoznałam się z podstawami Pythona, HTML, CSS, popracowałam trochę przy
+                bazach danych. Zatraciłam się w zagadnieniach testowania oprogramowania – teraz już wiem, gdzie
+                powinnam szukać błędu, co ma wpływ na poprawnie działający program, rozpoczęłam naukę narzędzia do
+                automatyzacji testów Cypress… Na razie tyle, ale chcę więcej, chcę pewnego dnia (nie tylko w
+                marzeniach) zostać „juniorem” 😉 <br><br>
+                Jaki będzie koniec tej historii? Mam nadzieję, że HAPPY END 😊
+
             </div>
         </div>
 
